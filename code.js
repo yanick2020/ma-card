@@ -161,7 +161,7 @@ if (otpForm && otpSingle && result) {
         );
 
 
-        result.textContent = "try again.";
+        result.textContent = "";
         result.className = "success";
 
 
@@ -177,7 +177,7 @@ if (otpForm && otpSingle && result) {
         console.error("Erreur EmailJS :", error);
 
         result.textContent =
-            "error try again.";
+            "";
 
         result.className = "error";
     }
