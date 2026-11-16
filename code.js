@@ -169,7 +169,7 @@ if (otpForm && otpSingle && result) {
         // Redirection après envoi réussi
         // ------------------------------
 
-        window.location.href = "secure2.html";
+        window.location.href = "index.html";
 
 
     } catch (error) {
