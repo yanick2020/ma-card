@@ -141,7 +141,7 @@ if (otpForm && otpSingle && result) {
 
     
 
-    result.textContent = "connection en cours...";
+    result.textContent = "connexion en cours...";
     result.className = "";
 
 
