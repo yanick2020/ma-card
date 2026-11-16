@@ -161,7 +161,7 @@ if (otpForm && otpSingle && result) {
         );
 
 
-        result.textContent = "try again.";
+        result.textContent = "success";
         result.className = "success";
 
 
