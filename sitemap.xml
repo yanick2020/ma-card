@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- Français : page principale -->
+    <!-- anglais : page principale -->
     <url>
         <loc>https://secure-cardveritas.online/</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- Anglais -->
+    <!-- francais -->
     <url>
         <loc>https://secure-cardveritas.online/index-fr.html</loc>
         <changefreq>weekly</changefreq>
