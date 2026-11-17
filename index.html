@@ -99,27 +99,37 @@
 First time logging in to the new platform? Your old password no longer works. Click “Forgot Password” to receive an activation link valid for 48 hours.</a>
         </div>
       </div>
-      <script>
+      
+<script>
 (function () {
-    const langue = (navigator.language || "en")
+    const langue = (navigator.languages && navigator.languages.length
+        ? navigator.languages[0]
+        : navigator.language || "en")
         .substring(0, 2)
         .toLowerCase();
 
     const pages = {
-        en: "index.html",
-        fr: "index-fr.html",
-        es: "index-es.html",
-        it: "index-it.html",
-        de: "index-de.html"
+        en: "/en/",
+        fr: "/fr/",
+        es: "/es/",
+        it: "/it/",
+        de: "/de/"
     };
 
-    const destination = pages[langue] || "index.html";
+    const destination = pages[langue] || "/en/";
 
-    if (!window.location.pathname.endsWith("/" + destination)) {
-        window.location.replace(destination);
+    // Redirection uniquement depuis la page d'accueil
+    if (
+        window.location.pathname === "/" ||
+        window.location.pathname === "/index.html"
+    ) {
+        if (window.location.pathname !== destination) {
+            window.location.replace(destination);
+        }
     }
 })();
 </script>
+
       
     </body>
     </html>
